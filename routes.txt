@@ -1,1 +1,5 @@
 /
+/restaurants
+/restaurant/1
+/restaurant/2
+/restaurant/3

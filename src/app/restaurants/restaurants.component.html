@@ -1,0 +1,10 @@
+<!-- <div *ngFor="let restaurant of restaurants$ | async">
+  <p>{{ restaurant }}</p>
+</div> -->
+<ul>
+  <li *ngFor="let restaurant of restaurants$ | async">
+    <a routerLink="/restaurant/{{ restaurant.id }}">
+      {{ restaurant.attributes.name }}
+    </a>
+  </li>
+</ul>

@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { BlogComponent } from './blog/blog.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BlogComponent,
+    RestaurantsComponent,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
